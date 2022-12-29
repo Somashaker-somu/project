@@ -1,0 +1,6 @@
+CREATE TABLE "student" (
+	"email"	TEXT NOT NULL,
+	"password"	TEXT NOT NULL,
+	"new password"	TEXT NOT NULL,
+	PRIMARY KEY("email")
+);

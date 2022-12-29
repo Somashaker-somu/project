@@ -1,0 +1,164 @@
+
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>project</title>
+       <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+      
+
+     <!-- <link rel="stylesheet" href="{{ url_for('static',filename='css/style1.css') }}"> -->
+     <link href="..\static\css\style1.css"  rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+      <div class="main-bar">
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+          <div class="logo-header">
+            <a href="#">Shakervar</a>
+          </div>
+          <ul>
+            <li class="Active"><a href="#">Home</a></li>
+            <!-- <li><a href="#About">About us</a></li> -->
+            <li><a href="#Abstract">Abstract</a></li>
+            <li><a href="#Team">Team</a></li>
+            <li><a href="{{url_for('login')}}">Login/SignUP</a></li>
+            <li><a href="#Contact">Contact</a></li>
+
+          </ul>
+        </nav>
+       
+
+      </div>
+    
+       <section class="banner" id="home">
+        <div>
+          <!-- <img src="{{ url_for('static',filename='images\52.jpg')}}"> -->
+          <img src="{{ url_for('static',filename='images/52.jpg')}}">
+          
+            <!-- <h3 class="pdy">Paddy crop disease detection using machine learing</h3> -->
+          </div>
+        </section>
+       <!--  <section class="About-section" id="About">
+          <div class="container">
+            <h1>About Us</h1>
+            <p>grid.css
+              * Sets up an easy-to-use grid of 24 columns.
+  
+                 By default, the grid is 950px wide, with 24 columns
+                  spanning 30px, and a 10px margin between columns.
+  
+                 If you need fewer or more columns, namespaces or semantic
+                  element names, use the compressor script (lib/compress.rb)
+  
+                 Note: Changes made in this file will not be applied when
+                using the compressor: make chan
+            </p>
+            <p>grid.css
+              * Sets up an easy-to-use grid of 24 columns.
+  
+             By default, the grid is 950px wide, with 24 columns
+              spanning 30px, and a 10px margin between columns.
+  
+             If you need fewer or more columns, namespaces or semantic
+              element names, use the compressor script (lib/compress.rb)
+  
+              Note: Changes made in this file will not be applied when
+              using the compressor: make chan
+            </p>
+        </div>
+      </section> -->
+        <section class="Abstract-section" id="Abstract">
+          <div class="container">
+            <h1>Abstract</h1><hr/>
+            <br>
+            <em>Now a days, Farmers are facing loss in crop production due to many reasons one of the major problem for the above issue is crop diseases. This is due to lack of knowledge about the disease and pesticides or insecticides available in order to control the disease. But finding the current disease and providing best remedies requires expert opinion or prior knowledge in order to control the disease. This is time consuming and expensive.In order to solve the above issue we are developing a Machine Learning model using Convolutional Neural Network (CNN) algorithm to detect the paddy crop disease using the image and provide the suitable remedy.The remedies provide appropriate information regarding to pesticide or insecticide to be use in order to cure the disease.The rice leaf suffers from several bacterial, viral, or fungal diseases and these diseases reduce rice production significantly. To sustain rice demand for a vast population globally, the recognition of rice leaf diseases is crucially important.However, recognition of rice leaf disease is limited to the image backgrounds and image capture conditions. The convolutional neural network (CNN) based model is a hot research topic in the field of rice leaf disease recognition
+</em><br>
+            <em><b>Keywords:</b>paddy crop disease, deep learning, CNN, Classification</em>
+
+            
+            
+          </div>
+          
+        </section>
+        <section class="Team-section" id="Team" class="padding">
+
+          <div class="container1">
+             <p><i style="font-size: 40px;">Team Members</i></p><hr style="background: black;">
+
+            
+           
+          
+          <div>
+            
+            
+            <div class="testimonials">
+              <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                   <span>Name:-</span><p>N.SomaShaker</p>
+                  <span>College:-</span><p>Aditya College Of Engineering</p>
+                  <span>Branch:-</span><p>C.S.E</p>
+                  <div class="image">
+                    <img src="{{ url_for('static',filename='images/537.jpg')}}" alt="bg image" width="180" height="100">
+                  </div>
+                  <div class="details">
+                    <h3><br><span>19MH1A0537</span></h3>
+                  </div>
+                </div>
+              </div>
+            
+               <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                  <span>Name:-</span><p>P.ManiDeep</p>
+                  <span>College:-</span><p>Aditya College Of Engineering</p>
+                  <span>Branch:-</span><p>C.S.E</p>
+                  <div class="image">
+                    <img src="{{ url_for('static',filename='images/541.jpg')}}" alt="bg image" width="100" height="100">
+                  </div>
+                  <div class="details">
+                    <h3><br><span>19MH1A0541</span></h3>
+                  </div>
+                </div>
+              </div>
+               <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                  <span>Name:-</span><p>P.Sahithi</p>
+                  <span>College:-</span><p>Aditya College Of Engineering</p>
+                  <span>Branch:-</span><p>C.S.E</p>
+                  <div class="image">
+                    <img src="{{ url_for('static',filename='images/536.jpg')}}" alt="bg image" width="100" height="100">
+                  </div>
+                  <div class="details">
+                    <h3><br><span>20MH5A0510</span></h3>
+                  </div>
+                </div>
+              </div>
+               <div class="card">
+                <div class="layer"></div>
+                <div class="content">
+                   <span>Name:-</span><p>P.Vinay</p>
+                  <span>College:-</span><p>Aditya College Of Engineering</p>
+                  <span>Branch:-</span><p>C.S.E</p>
+                  <div class="image">
+                    <img src="{{ url_for('static',filename='images/195.jpg')}}" alt="bg image" width="100" height="100">
+                  </div>
+                  <div class="details">
+                    <h3><br><span>20MH5A0509</span></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+
+    </body>
+    </html>
